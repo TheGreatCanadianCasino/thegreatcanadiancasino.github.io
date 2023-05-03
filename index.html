@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Great Canadian Casino</title>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      #header {
+        background-color: #ff6633;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        font-size: 36px;
+      }
+      
+      #description {
+        max-width: 800px;
+        margin: 50px auto;
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.5;
+      }
+      
+      .button {
+        display: inline-block;
+        background-color: #00bfff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        text-align: center;
+        margin: 20px;
+        text-decoration: none;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+      
+      .button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+      }
+      
+      .button img {
+        max-width: 100%;
+        height: auto;
+        filter: brightness(0.8);
+        transition: filter 0.3s ease-in-out;
+      }
+      
+      .button:hover img {
+        filter: brightness(1);
+      }
+      
+      .button1 {
+        background-image: url("button1.png");
+        background-size: cover;
+        background-position: center;
+        width: 200px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+        margin: 0 50px;
+      }
+      
+      .button2 {
+        background-image: url("button2.png");
+        background-size: cover;
+        background-position: center;
+        width: 200px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+        margin: 0 50px;
+      }
+      
+      .button3 {
+        background-image: url("button3.png");
+        background-size: cover;
+        background-position: center;
+        width: 200px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+        margin: 0 50px;
+      }
+      
+      .wave {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("wave.svg") repeat-x;
+        animation: wave 10s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+        transform: translate3d(0, -25px, 0);
+        z-index: -1;
+      }
+      
+      @keyframes wave {
+    0% {
+      transform: translate3d(0, -25px, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .screenshot {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+  }
+  
+  .screenshot img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .screenshot:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .screenshot:hover:before {
+    opacity: 1;
+  }
+  
+  .screenshot:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("bouncing-ball.gif") no-repeat center center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .screenshot:hover:after {
+    opacity: 1;
+  }
+  
+  @media (max-width: 768px) {
+    #description {
+      font-size: 20px;
+    }
+    
+    .button1, .button2, .button3 {
+      width: 150px;
+      height: 75px;
+      margin: 0 30px;
+    }
+  }
+</style>
+  </head>
+  <body>
+    <header id="header">
+      The Great Canadian Casino
+    </header>
+    <div id="description">
+      <p>The Great Canadian Casino is a new mobile app that lets you play fun and exciting games and win real prizes! With The Great Canadian Casino, you can win prizes like gift cards, free food, and more. It's easy to use and totally free!</p>
+    </div>
+    <div>
+      <a href="pv.html" class="button button1">
+        <div class="wave"></div>
+        <img src="button1.png" alt="Cache delete">
+      </a>
+      <a href="kv.html" class="button button2">
+        <div class="wave"></div>
+        <img src="button2.png" alt="Privacy Policy">
+      </a>
+      <a href="ev.html" class="button button3">
+        <div class="wave"></div>
+        <img src="button3.png" alt="
+Terms & Conditions">
+      </a>
+    </div>
+    <div class="screenshot">
+      <img src="2.png" alt="Screenshot 1">
+    </div>
+    <div class="screenshot">
+      <img src="3.png" alt="Screenshot 2">
+    </div>
+    <div class="screenshot">
+      <img src="4.png" alt="Screenshot 3">
+    </div>
+  </body>
+</html>
